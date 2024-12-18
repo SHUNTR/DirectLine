@@ -1,0 +1,9 @@
+.catalog {
+	padding: 40px 12px 0 12px;
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+}

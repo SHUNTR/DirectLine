@@ -1,0 +1,47 @@
+// base
+@import url(./base/_reset.scss);
+@import url(./base/_vars.scss);
+// layout
+@import url(./layout/_header.scss);
+@import url(./layout/_layout.scss);
+// components
+@import url(./components/_card.scss);
+@import url(./components/_link.scss);
+@import url(./components/_categories.scss);
+@import url(./components/_search.scss);
+@import url(./components/_catalog.scss);
+// fonts
+@import url(./fonts/font.scss);
+
+body {
+	color: var(--main-text-color);
+	background-color: var(--main-bg-color);
+}
+
+.container {
+	padding: 0 18.75dvw;
+	width: 100%;
+}
+
+.page {
+	&__content {
+		margin: 80px 0;
+		width: 100%;
+	}
+}
+
+.filter {
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.v-enter-active,
+.v-leave-active {
+	transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+	opacity: 0;
+}

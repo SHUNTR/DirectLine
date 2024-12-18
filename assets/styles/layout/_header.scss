@@ -1,0 +1,19 @@
+#header {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 40px 50px;
+    row-gap: 20px;
+    
+
+    .header__block{
+        &:first-of-type{
+            background-color: var(--main-gray-color);
+            border-radius: 0 0 10px 10px;
+        }
+    }
+    .header__list{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+}

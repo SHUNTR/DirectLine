@@ -1,0 +1,27 @@
+.categories {
+	&__list {
+		display: flex;
+		gap: 12px;
+		padding: 12px;
+
+		border: 1px solid var(--main-border-color);
+		border-radius: 10px;
+
+		background-color: var(--secondary-bg-color);
+		width: fit-content;
+	}
+	&__item {
+		transition: var(--main-transition);
+
+		color: var(--secondary-text-color);
+
+		font-size: 15px;
+		line-height: 15px;
+		&.active {
+			color: var(--primary-text-color);
+		}
+	}
+	&__button {
+		color: inherit;
+	}
+}
