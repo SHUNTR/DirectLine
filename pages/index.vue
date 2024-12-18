@@ -41,7 +41,6 @@
 		return Items.value.filter((item: Item) => {
 			if (item.status != 0) return false
 			if (ActiveCategory.value != -1 && item.category_id != ActiveCategory.value) return false
-			console.log(!item.title.match(new RegExp(`${SearchText.value.trim().toLowerCase()}`)))
 			if (!item.title.match(new RegExp(`${SearchText.value.trim().toLowerCase()}`))) return false
 			return true
 		})

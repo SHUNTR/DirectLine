@@ -39,8 +39,8 @@
 	const FilteredItems = computed(() => {
 		if (!Items.value || !Array.isArray(Items.value)) return []
 		return Items.value.filter((item: Item) => {
+			if (item.favorite == false) return false
 			if (ActiveCategory.value != -1 && item.category_id != ActiveCategory.value) return false
-			console.log(!item.title.match(new RegExp(`${SearchText.value.trim().toLowerCase()}`)))
 			if (!item.title.match(new RegExp(`${SearchText.value.trim().toLowerCase()}`))) return false
 			return true
 		})
